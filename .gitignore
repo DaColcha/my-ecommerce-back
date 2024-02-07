@@ -1,6 +1,7 @@
 HELP.md
 target/
 .mvn/
+mysql-data/
 
 ### STS ###
 .apt_generated
