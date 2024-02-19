@@ -2,6 +2,7 @@ HELP.md
 target/
 .mvn/
 mysql-data/
+mysql-data-macos/
 
 ### STS ###
 .apt_generated

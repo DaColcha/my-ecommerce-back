@@ -19,6 +19,29 @@ public class Product {
     @Column(name = "image_url")
     private String imageUrl;
 
+    @ManyToOne //(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_name")
+    private Category category;
+
+    @Column(name = "price")
+    private Float price;
+
+    public Float getPrice() {
+        return price;
+    }
+
+    public void setPrice(Float price) {
+        this.price = price;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
     public Integer getId() {
         return id;
     }
